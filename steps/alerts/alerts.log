@@ -1,0 +1,25 @@
+** Alert 1392807221.40951: - pam,syslog,authentication_success,
+2014 Feb 19 16:23:41 test-machine->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Feb 19 16:23:41 test-machine sudo: pam_unix(sudo:session): session opened for user root by testuser(uid=0)
+
+** Alert 1392807221.41220: - pam,syslog,
+2014 Feb 19 16:23:41 test-machine->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Feb 19 16:23:41 test-machine sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1392807321.42985: mail  - ossec,syscheck,
+2014 Feb 19 16:25:21 test-machine->syscheck
+Rule: 550 (level 7) -> 'Integrity checksum changed.'
+Integrity checksum changed for: '/home/testuser/_temp/MainActivity.xml'
+Size changed from '384' to '0'
+Old md5sum was: '19012a7b898c8d44d7191c2f930a90c0'
+New md5sum is : '8f93a0f0be82e9e6982a81515c0d690b'
+Old sha1sum was: '190a66e3896b0da182bf204e1d224671764fcd72'
+New sha1sum is : '179b67baaf03435a54bc1cb12d01849c2a6c3851'
+
+** Alert 1392807321.43456: mail  - ossec,syscheck,
+2014 Feb 19 16:25:21 test-machine->syscheck
+Rule: 551 (level 7) -> 'Integrity checksum changed again (2nd time).'
+Integrity checksum changed for: '/home/testuser/_temp/MainActivity.xml'
+Size changed from '0' to '403'
